@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "app"
 version = "0.0.1"
 dependencies = [
-  "make87",
-  "make87_messages",
+  "make87[storage]",
+  "make87_messages>=0.0.83",
 ]
 description = "A small example package"
 readme = "README.md"
