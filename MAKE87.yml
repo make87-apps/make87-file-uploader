@@ -5,3 +5,8 @@ provider_endpoints:
   - name: RELATIVE_PATH_FILE
     requester_message_type: make87_messages.file.simple_file.RelativePathFile:0.0.83
     provider_message_type: make87_messages.primitive.bool.Bool:0.0.83
+config:
+  values:
+    - name: PATH_PREFIX
+      description: "Relative prefix for the path to the file between incoming file path and system storage path. Ex: 'my_files/'. Trailing slash is optional."
+      required: false

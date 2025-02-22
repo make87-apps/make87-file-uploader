@@ -13,7 +13,8 @@ def main():
         name="RELATIVE_PATH_FILE", requester_message_type=RelativePathFile, provider_message_type=Bool
     )
 
-    storage_path = m87.get_system_storage_path()
+    path_prefix = m87.get_config_value("PATH_PREFIX", default="")
+    storage_path = m87.get_system_storage_path() / Path(path_prefix)
 
     def callback(message: RelativePathFile) -> Bool:
         relative_path = Path(message.path)
