@@ -3,8 +3,8 @@ build_kit:
   version: latest
 provider_endpoints:
   - name: RELATIVE_PATH_FILE
-    requester_message_type: make87_messages.file.simple_file.RelativePathFile:0.0.83
-    provider_message_type: make87_messages.primitive.bool.Bool:0.0.83
+    requester_message_type: make87_messages.file.simple_file.RelativePathFile
+    provider_message_type: make87_messages.primitive.bool.Bool
 config:
   values:
     - name: PATH_PREFIX
